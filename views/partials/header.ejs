@@ -1,0 +1,29 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nav.css"> <!-- new header CSS file -->
+</head>
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="/" class="logo"><span>U</span>p&away</a>
+    <nav class="navbar">
+        <a href="/">home</a>
+        <a href="/packages">packages</a>
+        <a href="/services">services</a>
+        <a href="/gallery">gallery</a>
+        <a href="/contact-us">contact</a>
+    </nav>
+
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+        <a href="/dashboard"><i class="fas fa-cogs" id="admin-btn"></i></a> <!-- New admin icon with link -->
+    </div>
+
+    <form action="/results" class="search-bar-container">
+        <input type="search" id="search-bar" name="text" placeholder="Search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+        <button type="submit"></button>
+    </form>
+</header>

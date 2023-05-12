@@ -1,0 +1,68 @@
+
+
+
+<section class="packages" id="package">
+    <h1 class="heading">
+        <span>T</span>
+        <span>O</span>
+        <span>U</span>
+        <span>R</span>
+        <span>S</span>
+    </h1>
+
+
+    <!--redirect to add-cards-->
+    <a href="/add-card" class="btn btn-primary" style="position: absolute; top: 20px; right: 20px;">+ New Tour</a>
+    <a href="/dashboard" class="btn btn-primary" style="position: absolute; top: 20px; left: 20px;">Back </a>
+    <div class="box-container">
+        <% tours.forEach(function(tour){ %>
+            <div class="card">
+                <div class="card__header">
+                    <div class="card__picture">
+                        <div class="card__picture-overlay">&nbsp;</div>
+                        <img class="card__picture-img" src="<%= tour.imgUrl %>" alt="">
+                    </div>
+                    <h3 class="heading-tertirary"><span><%= tour.name %> </span></h3>
+                </div>
+                <div class="card__details">
+                    <h4 class="card__sub-heading"><%= tour.difficulty %>  <%= tour.duration %>-day tour</h4>
+                    <p class="card__text"><%= tour.description %>...</p>
+                    <div class="card__data">
+                        <svg class="card__icon">
+                            <use xlink:href="/img/icons.svg#icon-map-pin"></use>
+                        </svg>
+                        <span><%= tour.location %></span></div>
+                    <div class="card__data">
+                        <svg class="card__icon">
+                            <use xlink:href="/img/icons.svg#icon-calendar"></use>
+                        </svg>
+                        <span><%= tour.startDates %></span></div>
+                    <div class="card__data">
+                        <svg class="card__icon">
+                            <use xlink:href="/img/icons.svg#icon-flag"></use>
+                        </svg>
+                        <span>4 stops</span></div>
+                    <div class="card__data">
+                        <svg class="card__icon">
+                            <use xlink:href="/img/icons.svg#icon-user"></use>
+                        </svg>
+                        <span><%= tour.maxGroupSize %></span></div>
+                </div>
+
+                <div class="card2__footer">
+                    <form action="/edit/<%= tour._id %>" method="POST">
+                        <a class="btng" href="/edit/<%= tour._id %>">Edit</a>
+                    </form>
+                    <form action="/delete/<%= tour._id %>" method="POST" onsubmit="return confirm('Are you sure you want to delete this?');">
+                        <button class="btnr" type="submit">Delete</button>
+                    </form>
+                </div>
+
+
+            </div>
+        <% }) %>
+    </div>
+</section>
+
+
+

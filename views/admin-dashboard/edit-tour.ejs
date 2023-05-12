@@ -1,0 +1,96 @@
+<!-- edit-tour.ejs -->
+
+<style>
+    .form-container-edit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    form {
+        width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f5f5f5;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    textarea[name="description"] {
+        resize: vertical;
+    }
+
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    .btn-primary {
+        display: inline-block;
+        background-color: #2d2d2d;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .btn-primary:hover {
+        background-color: #333;
+    }
+</style>
+
+<a href="/dashboard/tours" class="btn btn-primary">Back</a>
+<div class="form-container-edit">
+    <form action="/edit/<%= tour._id %>" method="POST">
+        <label for="name">Tour Name:</label>
+        <input type="text" name="name" value="<%= tour.name %>" required>
+
+        <label for="location">Location:</label>
+        <input type="text" name="location" value="<%= tour.location %>" required>
+
+        <label for="description">Description:</label>
+        <textarea name="description" rows="4" required><%= tour.description %></textarea>
+
+        <label for="maxGroupSize">Max Group Size:</label>
+        <input type="text" name="maxGroupSize" value="<%= tour.maxGroupSize %>" required>
+
+        <label for="imgUrl">Image URL:</label>
+        <input type="text" name="imgUrl" value="<%= tour.imgUrl %>" required>
+
+        <label for="difficulty">Difficulty:</label>
+        <input type="text" name="difficulty" value="<%= tour.difficulty %>" required>
+
+        <label for="startDates">Start Dates:</label>
+        <input type="text" name="startDates" value="<%= tour.startDates %>" required>
+
+        <button type="submit">Update Tour</button>
+    </form>
+</div>

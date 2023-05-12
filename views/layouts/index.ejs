@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours Website</title>
+    <!--google font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<!--header section start-->
+
+
+<!--header section end-->
+
+
+<!--login form start-->
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>Sign in</h3>
+        <input type="email" class="box" placeholder="Enter your email">
+        <input type="password" class="box" placeholder="Enter your password">
+        <input type="submit" value="Login now" class="btn">
+
+        <div class="or-container">
+            <div class="or-line"></div>
+            <span class="or-text">or sign in/up with</span>
+            <div class="or-line"></div>
+        </div>
+
+        <a href="/auth/google" type="button" class="btn-google">
+            <img src="img/google-37.png" alt="Google logo">
+            Sign in with Google
+        </a>
+
+<!--        <p>Forget password? <a href="#">Click here</a></p>-->
+<!--        <p>Don't have an account? <a href="#">Register now</a></p>-->
+    </form>
+</div>
+
+
+
+
+<%- include('../partials/header.ejs') %>
+<%-body%>
+<script src="/scripts/script.js"></script>
+
+<!--scripts-->
+</body>
+
+</html>

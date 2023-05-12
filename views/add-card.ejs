@@ -1,0 +1,37 @@
+<a href="/dashboard/tours" class="btn btn-primary" style="position: absolute; top: 70px; left: 20px;">Back</a>
+<form action="/add-card" method="post">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required><br><br>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" min="0" required><br><br>
+
+    <label for="discount">Discount:</label>
+    <input type="number" id="discount" name="discount" min="0" max="100" required><br><br>
+
+    <label for="img-url">Image URL:</label>
+    <input type="url" id="img-url" name="imgUrl" required><br><br>
+
+    <label for="max-group-size">Max Group Size:</label>
+    <input type="number" id="max-group-size" name="maxGroupSize" min="0" required><br><br>
+
+    <label for="start-date">Start Date:</label>
+    <input type="date" id="startDates" name="startDates" required>
+
+
+    <label for="duration">Duration:</label>
+    <input type="text" id="duration" name="duration" required><br><br>
+
+    <label for="difficulty">Difficulty:</label>
+    <input type="text" id="difficulty" name="difficulty" required><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+

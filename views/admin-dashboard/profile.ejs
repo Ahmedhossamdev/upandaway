@@ -1,0 +1,15 @@
+<div class="profile-container">
+    <h1 class="welcome-msg">Welcome, <%= user.displayName %>!</h1>
+    <div class="profile-details">
+        <div class="profile-image">
+            <img src="<%= user.profileImage %>" alt="Profile Image">
+        </div>
+        <div class="profile-info">
+            <p><span class="label">First Name:</span> <%= user.firstName %></p>
+            <p><span class="label">Last Name:</span> <%= user.lastName %></p>
+            <p><span class="label">Email:</span> <%= user.email %></p>
+            <p><span class="label">Role:</span> <%= user.role %></p>
+            <p><span class="label">Joined:</span> <%= user.createdAt %></p>
+        </div>
+    </div>
+</div>

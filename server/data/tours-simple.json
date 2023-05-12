@@ -1,0 +1,31 @@
+[
+  {
+    "name": "TestScript",
+    "location": "test",
+    "difficulty": "easy",
+    "description": "test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test",
+    "price": 400,
+    "discount": 100,
+    "imgUrl": "https://th.bing.com/th/id/R.d22c34870961693be415653b54e5a982?rik=y5DH8MEEfRaSXA&pid=ImgRaw&r=0",
+    "maxGroupSize": 31,
+    "startDates": [
+      "2023-04-19T00:00:00.000Z"
+    ],
+    "duration": 31
+  },
+  {
+    "name": "TestScript2",
+    "location": "test",
+    "difficulty": "easy",
+    "description": "test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test",
+    "price": 400,
+    "discount": 100,
+    "imgUrl": "https://th.bing.com/th/id/R.d22c34870961693be415653b54e5a982?rik=y5DH8MEEfRaSXA&pid=ImgRaw&r=0",
+    "maxGroupSize": 31,
+    "startDates": [
+      "2023-04-19T00:00:00.000Z"
+    ],
+    "duration": 31
+  }
+
+]

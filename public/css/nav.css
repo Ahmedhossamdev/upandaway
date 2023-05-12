@@ -1,0 +1,247 @@
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(18, 16, 16, 0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+header .logo span {
+    color: var(--gold);
+}
+/* Text Style */
+header .navbar a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 .8rem;
+}
+
+header .navbar a:hover {
+    color: var(--black);
+}
+
+/*
+ icon style
+*/
+header .icons i {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+header .icons i:hover {
+    color: var(--black);
+}
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background-color: rgba(20, 20, 20, 0.8);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0);
+}
+header .search-bar-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* text color */
+header .search-bar-container #search-bar {
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+header .search-bar-container label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+header .search-bar-container label :hover {
+    color: var(--black);
+}
+.icons i {
+    color: white;
+}
+/* main screen (login) start */
+.login-form-container {
+    position: fixed;
+    top: -120%;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container.active {
+    top: 0;
+}
+.login-form-container form {
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 50rem;
+}
+.login-form-container form h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+.login-form-container form .box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem 0;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    text-transform: none;
+}
+.login-form-container form .box:focus {
+    border-color: var(--black);
+}
+.login-form-container form #remember {
+    margin: 1rem 0;
+}
+
+.login-form-container form label {
+    font-size: 1.5rem;
+}
+.login-form-container form .btn {
+    background-color: #ffffff;
+    color: #4285f4;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    margin: .6rem 0;
+    cursor: pointer;
+    width: 100%;
+    border: 2px solid #4285f4;
+}
+.login-form-container form .btn:hover {
+    background-color: #3367D6;
+    color: #fff;
+}
+.login-form-container form p {
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.login-form-container form p a {
+    color: var(--black);
+}
+.login-form-container form p a:hover {
+    color: #333;
+    text-decoration: unset;
+}
+.login-form-container #form-close {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+}
+/* main screen (login) end */
+/* or-line start */
+.or-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    text-align: center;
+}
+.or-line {
+    flex-grow: 1;
+    height: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 1rem;
+}
+.or-text {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* or-line end */
+/* google-button start */
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    background-color: #ffffff;
+    color: #4285f4;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    border: 2px solid #4285f4;
+}
+.btn-google img {
+    margin-right: 0.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.btn-google:hover {
+    background-color: #3367D6;
+    color: #fff;
+}
+/* google-button end*/
+/* radio button style start */
+.radio-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.radio-container label {
+    margin: 0 1rem;
+}
+/* radio button style end */
+#menu-bar {
+    color: #fff;
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}

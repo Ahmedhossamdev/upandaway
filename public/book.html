@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Reservation Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/book.css">
+    <style>
+        /* Place the CSS code here */
+    </style>
+</head>
+<body>
+<section class="banner">
+    <a href="/" class="btn btn-primary" style="position: absolute; top: 20px; left: 20px;">Back </a>
+    <h2><span class="u-color">U</span>P&Away</h2>
+    <div class="card-container">
+        <div class="card-img">
+            <!-- image here -->
+        </div>
+        <div class="card-content">
+            <h3>Book Now</h3>
+            <form>
+                <div class="form-row">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Phone">
+                    <input type="text" placeholder="Email" required>
+                </div>
+
+                <div class="form-row">
+                    <input type="number" placeholder="How Many Persons?" min="1" required>
+                    <input type="date" placeholder="Select day" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Promo Code">
+                    <input type="submit" onclick="location.href='/credit.html';">BOOK</input>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
