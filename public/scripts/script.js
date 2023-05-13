@@ -10,8 +10,6 @@ let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
 
-
-
 window.onscroll = () =>{
     searchBtn.classList.remove('fa-times');
     searchBar.classList.remove('active');
@@ -25,6 +23,8 @@ menu.addEventListener('click' , ()=>{
    navbar.classList.toggle('active');
 });
 
+
+// X icon and Search Icon --toggle
 searchBtn.addEventListener('click' , ()=>{
     searchBtn.classList.toggle('fa-times');
     searchBar.classList.toggle('active');

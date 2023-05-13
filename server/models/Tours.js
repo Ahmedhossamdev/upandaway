@@ -26,7 +26,7 @@ const ToursSchema = new Schema({
         type: String,
         required: true,
         trim: true,
-        minlength: [250, 'A tour name must have more or equal then 250 characters'],
+        minlength: [200, 'A tour name must have more or equal then 200 characters'],
     },
     price: {
         type: Number,

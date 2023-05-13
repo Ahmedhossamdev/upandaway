@@ -43,7 +43,8 @@ exports.Tours = async (req, res) => {
             res.render('packages/no-tours', {
                 layout: '../views/layouts/index',
             });
-        } else {
+        }
+        else {
             res.render('packages/cards', {
                 tours,
                 currentPage: page,
@@ -90,6 +91,7 @@ exports.showDetails = async (req, res) => {
                     }
                 }
             }
+
         ];
         const tour = await Tours.aggregate(pipeline);
         res.render("show-details", {
@@ -105,6 +107,10 @@ exports.showDetails = async (req, res) => {
 exports.search = async (req, res) => {
     try {
         const searchTerm = req.query.text;
+        const page = parseInt(req.query.page) || 1; // Get the current page from query parameter, default to 1
+        const limit = 6; // Number of cards per page
+        const startIndex = (page - 1) * limit; // Calculate the starting index for the current page
+
         let tours;
         if (searchTerm) {
             tours = await Tours.aggregate([
@@ -130,20 +136,30 @@ exports.search = async (req, res) => {
                             }
                         }
                     }
-                }
+                },
+                { $skip: startIndex }, // Skip documents based on the starting index
+                { $limit: limit } // Limit the number of documents returned
             ]);
         }
+        const totalToursCount = await Tours.countDocuments(); // Total number of tours
+        const totalPages = Math.ceil(totalToursCount / limit); // Calculate the total number of pages
         if (tours.length === 0) {
             // No tours found matching the search term
             return res.render("no-results", {
+                tours,
+                currentPage: page,
+                totalPages,
                 layout: '../views/layouts/index',
             });
         }
         res.render('packages/cards', {
             tours,
+            currentPage: page,
+            totalPages,
             layout: '../views/layouts/index',
         });
-    } catch (error) {
+    }
+    catch (error) {
         res.status(500).json({error: 'An error occurred'});
         alert: error.message
     }

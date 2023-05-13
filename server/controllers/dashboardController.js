@@ -37,7 +37,8 @@ exports.dashboardMain = async (req, res) => {
                 getStatusClass: getStatusClass,
                 user: req.user, // Pass the user object to the template
             });
-        } else {
+        }
+        else {
             res.send('This page is for admin only.');
         }
     } catch (error) {
