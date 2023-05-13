@@ -42,8 +42,8 @@ app.use(passport.session());
 
 
 // Static Files
-//app.use(express.static('public', { maxAge: 86400000 }));
-app.use(express.static('public'));
+app.use(express.static('public', { maxAge: 86400000 }));
+//app.use(express.static('public'));
 
 
 
