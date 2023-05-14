@@ -13,6 +13,12 @@ exports.frontPage = async (req, res) => {
     });
 };
 
+exports.getChat = async (req, res) => {
+    res.render('chatBot', {
+        currentPage: 'chatBot',
+        layout: '../views/layouts/index',
+    });
+};
 
 exports.contactUs = async (req, res) => {
     res.render('contact-us', {

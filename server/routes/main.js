@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const {frontPage , contactUs , services , gallary , showBook} = require('../controllers/mainController');
+const {frontPage , contactUs , services , gallary , showBook, getChat} = require('../controllers/mainController');
 
 
-router.get('/' , frontPage);
+router.get('/' , frontPage , getChat);
 router.get('/contact-us' , contactUs);
 router.get('/services' , services);
 router.get('/gallery' , gallary);

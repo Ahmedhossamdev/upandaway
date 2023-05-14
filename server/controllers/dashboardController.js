@@ -57,7 +57,7 @@ exports.getDashboardTours = async (req, res) => {
             },
             {
                 $project: {
-                    _id: 1,
+                        _id: 1,
                     duration: 1,
                     rating: 1,
                     description: {$substrCP: ['$description', 0, 100]},
