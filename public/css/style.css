@@ -423,7 +423,7 @@ header .search-bar-container label :hover {
 }
 
 body {
-    height: 300rem;
+    height: auto;
     line-height: 1.6;
     background-image: url('/img/cool-background.png');
     background-repeat: no-repeat;
