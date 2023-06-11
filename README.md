@@ -36,4 +36,9 @@ Test it now from [here](https://real-tiara-pike.cyclic.app)!
 ![Authentication](https://github.com/Ahmedhossamdev/upandaway/assets/99441866/77e05a6d-9b98-4231-b6b3-b2df703f4624)
 
 ## Dashboard Admin (Add - Delete - Update - Read - Profile - Tracking)
-![Dashboard Admin](https://github.com/Ahmedhossamdev/upandaway/assets/99441866/b7bb53c5-a20c-4662-abc9-1e8172
+![image](https://github.com/Ahmedhossamdev/upandaway/assets/99441866/b7bb53c5-a20c-4662-abc9-1e8172a5099a)
+![image](https://github.com/Ahmedhossamdev/upandaway/assets/99441866/4e57b25e-8ff7-460b-abce-c52f254abd32)
+![image](https://github.com/Ahmedhossamdev/upandaway/assets/99441866/8d7fe679-1e29-4682-9cef-68ab8bdf1bd3)
+![image](https://github.com/Ahmedhossamdev/upandaway/assets/99441866/26268d75-12a7-4a3f-bd53-76e1f6f75d65)
+![image](https://github.com/Ahmedhossamdev/upandaway/assets/99441866/024209f5-f227-44a8-a497-cf45e1594836)
+
